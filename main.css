@@ -27,6 +27,9 @@ h2:hover {
   background-color: #9F8AF7;
   color: white;
 }
+a {
+  color: white;
+}
 .takeaction:hover {
   background-color: #8816FF;
 }
@@ -84,6 +87,9 @@ h2:hover {
 .headingcontainer:hover {
   background-color: #FDFFDA;
 }
+#calendarHeading {
+  margin-top: 100px;
+}
 @media screen and (max-width: 400px) { /*.43*/
   .buttons {
     padding-top: 8.6px;
@@ -114,7 +120,7 @@ h2:hover {
     padding-bottom: 41.4px;
   }
 }
-@media screen and (min-device-width: 480px) { /*.51*/
+/*@media screen and (min-device-width: 480px) { /*.51
   h2 {
     margin-top: 20px;
     font-size: 20px;
@@ -149,7 +155,7 @@ h2:hover {
     padding-bottom: 45.9px;
   }
 }
-@media screen and (min-width: 600px) { /*.64*/
+@media screen and (min-width: 600px) { /*.64
   h2 {
     margin-top: 12.8px;
     font-size: 12.8px;
@@ -185,8 +191,7 @@ h2:hover {
     padding-top: 38.4px;
     padding-bottom: 57.6px;
   }
-}
-@media screen and (max-width: 800px) { /*.86*/
+@media screen and (max-width: 800px) { /*.86
   h2 {
     margin-top: 17.2px;
     font-size: 17.2px;
@@ -224,7 +229,7 @@ h2:hover {
     padding-bottom: 77.4px;
   }
 }
-@media screen and (min-width: 1300px) { /*1.4*/
+@media screen and (min-width: 1300px) { /*1.4
   h2 {
     margin-top: 28px;
     font-size: 28px;
@@ -263,3 +268,4 @@ h2:hover {
     padding-bottom: 126px;
   }
 }
+*/

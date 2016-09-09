@@ -37,13 +37,14 @@
     <p>1. Design your quiz</p>
     <div class="buttons">
       <button class="takeaction" id="flashcards"><a href="flashcards.html">Flashcards</button>
-      <button class="takeaction" id="multiplechoice"><a href="multiplechoice.html">Multiple Choice</button>
+      <button class="takeaction" id="multiplechoice"><a href="multiplechoice.html">Multiple Choice</a></button>
     </div>
   </div>
   <div class="steps">
-    <p>2. Add spaced repetition dates on your calendar</p>
+    <p>2. Determine spaced repetition dates.</p>
+    <p>Enter your test date here: <input type="date" id="date" name="date"/></p><a href="calendar.html">
     <div class="buttons">
-      <button class="takeaction"><a href="calendar.html">Calendar</a></button>
+      <button class="takeaction" id="submitDate"><a href="calendar.html">Submit</a></button>
     </div>
   </div>
   <div class="steps">
@@ -54,5 +55,6 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="moment.js"></script>
   <script src="app.js"></script>
 </html>
