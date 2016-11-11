@@ -1,0 +1,36 @@
+{
+  "name": "inbrain",
+  "version": "1.0.0",
+  "description": "A tool to help you use brain research techniques while studying",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmcorrales/classcom.git"
+  },
+  "keywords": [
+    "brain",
+    "research",
+    "study",
+    "learning",
+    "spaced",
+    "repetition",
+    "test",
+    "preparation",
+    "neuroscience"
+  ],
+  "author": "Cassandra Corrales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmcorrales/classcom/issues"
+  },
+  "homepage": "https://github.com/cmcorrales/classcom#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "express": "^4.14.0",
+    "mocha": "^3.1.2"
+  }
+}
