@@ -1,4 +1,59 @@
 $(function(){
+var Quiz = require('./models/quiz');
+
+
+var MOCK_QUESTIONS = new Quiz {
+  "questions": [
+    {
+    "Number": 1,
+    "question": "What are the components of a nucleotide?",
+    "correctAnswer": "deoxyribose sugar, a phosphate and a base"
+  },
+    {
+    "Number": 2,
+    "question": "What are the four DNA bases?",
+    "correctAnswer": "guanine, cytosine, thymine and adenine"
+  },
+    {
+    "Number": 3,
+    "question": "Which base does RNA have instead of thymine?"
+    "correctAnswer": "uracil",
+  }
+  ]
+};
+
+var MOCK_QUIZ_DATES = {
+  "dates" : [
+    {
+     "quiz1": "11/15/16"
+   },
+   {
+     "quiz2": "11/22/16"
+   },
+   {
+     "quiz3": "11/29/16"
+   }
+  ]
+};
+
+function getQuizQuestions(callbackFn) {
+  setTimeout(function() {
+    callbackFn(MOCK_QUESTIONS)
+  }, 100);
+}
+
+function displayQuizQuestions(data) {
+  for (index in data.quizQuestions) {
+    $('.quiz').append('<p>'+ data.quizQuestions[index].text + '</p');
+  }
+}
+function getAndDisplayQuizQuestions() {
+  getQuizQuestions(displayQuizQuestions);
+}
+$(function() {
+  getAndDisplayQuizQuestions();
+})
+
 // select user's date value, determine spaced repetition dates
   $("#submitDate").click(function(e) {
     e.preventDefault();

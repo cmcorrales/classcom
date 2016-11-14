@@ -1,4 +1,23 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+
+var mongoose   = require('mongoose');
+mongoose.connect('mongodb://user:user@ds151927.mlab.com:51927/inbrain-quiz')
+
 app.use(express.static('public'));
-app.listen(process.env.PORT || 8080);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+var port = process.env.PORT || 8080;
+
+var router = express.Router();
+
+router.get('/', function(req, res) {
+    res.json({ message: 'hooray! welcome to our api!' });
+});
+
+app.use('/api', router);
+
+app.listen(port)
+console.log('happening on' + port);
