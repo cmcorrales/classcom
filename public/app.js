@@ -1,7 +1,6 @@
 $(function(){
-var Quiz = require('./models/quiz');
 
-
+/*
 var MOCK_QUESTIONS = new Quiz {
   "questions": [
     {
@@ -50,6 +49,7 @@ function displayQuizQuestions(data) {
 function getAndDisplayQuizQuestions() {
   getQuizQuestions(displayQuizQuestions);
 }
+
 $(function() {
   getAndDisplayQuizQuestions();
 })

@@ -27,9 +27,12 @@
     </div>
     <h1 class="heading" id="calendarHeading">Create a New Quiz</h1>
     <h2>As you review your notes, create a quiz. Quiz questions should include the important information you will need to remember for your exam.<h2>
+      <form action='/quiz' method='post'>
       <div class="createQuiz">
       Question:<input type=text><br>
       Answer:<input type=textarea>
+      <button type="submit">Enter</button>
+      </form>
       <div class="buttons">
         <button class="takeaction"><a href="takequiz.html">Add Another Question</button>
       </div>
