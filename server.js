@@ -14,6 +14,10 @@ MongoClient.connect('mongodb://user:user@ds151927.mlab.com:51927/inbrain-quiz', 
   db = database
 });
 
+app.get('/', (req, res) => {
+  res.sendFile(__public + 'public/index.html')
+})
+
 app.post('/quiz', (req, res) => {
   db.collection('quiz').save(req.body, (err, result) => {
     if (err) return console.log(err)
